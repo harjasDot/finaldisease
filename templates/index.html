@@ -1,0 +1,154 @@
+{% extends "base.html" %}
+{% block title %}DISEASE PREDICTOR{% endblock title %}
+{% block home %}active{% endblock home %}
+{% block base %}
+{% load static %}
+<body>
+  
+  <div id="SLIDE_BG">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Dibaties</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text"><ul class="no-bullets">
+                <li>Urinate a lot</li>
+                <li>Very Thirsty</li>
+                <li>Very Hungry</li>
+                <li>Blurry Vision</li>
+                <li>Very Dry Skin</li>
+              </ul></p>
+              <a href="{% url 'diabetesPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Breast Cancer</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+               <ul class="no-bullets">
+                 <li>New lump in the Brest of underarm</li>
+                 <li>Irritation or dimpling of Breast skin</li>
+                 <li>Pain in area of the Breast</li>
+                 <li>Thickness/swelling of part of the Breast</li>
+               </ul> </p>
+              <a href="{% url 'cancerPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Heart</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+                <ul class="no-bullets">
+                  <li>Chest Pain</li>
+                  <li>Shorrtness or Wheezing</li>
+                  <li>Fast or Uneven Heartbeat</li>
+                  <li>Swelling in the Legs,Ankles or Feet</li>
+                  <li>Dizziness</li>
+                </ul>
+              </p>
+              <a href="{% url 'heartPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Kidney</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+                <ul class="no-bullets">
+                  <li>Dry and Itchy Skin</li>
+                  <li>Feel need to Urinate more</li>
+                  <li>Blood in yout Urine</li>
+                  <li>Urine is foamy</li>
+                  <li>Have touble sleeping</li>
+                </ul>
+              </p>
+              <a href="{% url 'kidneyPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Liver</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+                <ul class="no-bullets">
+                  <li>Skin and eyes appear yellowish</li>
+                  <li>Dark urine color</li>
+                  <li>Pale stool color</li>
+                  <li>Chronic fatigue</li>
+                  <li>Abdominal pain and swelling</li>
+                </ul>
+              </p>
+              <a href="{% url 'liverPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Malaria</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+                <ul class="no-bullets">
+                  <li>Rapid breathing</li>
+                  <li>Abdominal pain</li>
+                  <li>Chills and Headache</li>
+                  <li>Fever</li>
+                  <li>Rapid heart rate</li>
+                </ul>
+              </p>
+              <a href="{% url 'malariaPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+        </div>
+
+
+
+
+      </div>
+      <div class="row">
+        <div class="col">
+
+        </div>
+        <div class="col">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Pneumonia</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Symptoms</h6>
+              <p class="card-text">
+                <ul class="no-bullets">
+                  <li>Shortness of breath</li>
+                  <li>Fever,sweating and shaking chills</li>
+                  <li>Confusion or changes in mental awareness(age 65 and above)</li>
+                  <li>Chest pain when you breath or cough</li>
+                </ul>
+              </p>
+              <a href="{% url 'pneumoniaPage' %}" class="card-link">CHECK PREDICTION</a>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+      </div>
+
+      </div>
+
+  </div>
+
+</body>
+{% endblock base %}
+

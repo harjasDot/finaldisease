@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}PNEUMONIA PREDICTOR{% endblock title %}
+{% block pneumonia %}active{% endblock pneumonia %}
+{% block base %}
+{% load static %}
+  <body>
+  
+<div id="SLIDE_BG">
+  <h1>PNEUMONIA PREDICTOR</h1>
+  <form class="form-horizontal" action="{% url 'pneumoniapredictPage' %}" method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <center>
+    <input onchange="readURL(this);" type="file" name="image" placeholder="Upload Image">
+    <br>
+    <br>
+    <img class="img-fluid" id="blah" src="#" alt="UPLOADED IMAGE WILL APPEAR HERE" />
+    <br>
+    <br>
+    <input class="btn btn-info" type="submit">
+    </center>
+</form>
+</div>
+
+<script>
+  function readURL(input) {
+          if (input.files && input.files[0]) {
+              var reader = new FileReader();
+
+              reader.onload = function (e) {
+                  $('#blah')
+                      .attr('src', e.target.result)
+                      .width(500)
+                      .height(500);
+              };
+
+              reader.readAsDataURL(input.files[0]);
+          }
+      }
+</script>
+
+  </body>
+{% endblock base %}
